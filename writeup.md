@@ -29,7 +29,7 @@ It can be seen in the point cloud that the most distinguishable features of the 
    <img src="writeup_images/final/RMSE_step3.png" alt="RMSE Step 3"  width="500">
 
 
-4. **camera fusion**: In this step, I implemented the nonlinear camera measurement function which maps the state vector to the measurement space, which is in 2D image coordinates. In addition I implemented a function that determines whether a track object is within the FOV of the sensor to determine whether or not its score should be decreased. The RMSE plot of the final test run with both camera and lidar is shown below
+4. **camera fusion**: In this step, I implemented the nonlinear camera measurement function which maps the state vector to the measurement space, which is in 2D image coordinates. In addition I implemented a function that determines whether a track object is within the FOV of the sensor to determine whether or not its score should be decreased. The RMSE plot of the final test run with both camera and lidar is shown below. Also see the video "my_tracking_results.avi" in the root directory of this repository.
     
     <img src="writeup_images/final/RMSE_final.png" alt="RMSE Final"  width="500">
 
