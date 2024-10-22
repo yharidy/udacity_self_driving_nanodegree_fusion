@@ -236,7 +236,7 @@ def make_movie(path):
     height, width, layers = frame.shape
 
     # save with 10fps to result dir
-    video = cv2.VideoWriter(os.path.join(path, 'my_tracking_results.avi'), 0, 10, (width,height))
+    video = cv2.VideoWriter(os.path.join(path, 'my_tracking_results.avi'), 0, 100, (width,height))
 
     for image in images:
         fname = os.path.join(path, image)
