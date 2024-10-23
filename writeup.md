@@ -23,6 +23,8 @@ It can be seen in the point cloud that the most distinguishable features of the 
    <img src="writeup_images/final/RMSE_step1.png" alt="RMSE Step 1"  width="500">
    
 2. **track management**: This step involved writing the logic for initializing new tracks, deleting old tracks and updating existing tracks. I have implemented the initialization of the track state from lidar measurements as well as the track state and track score. I have implemented the logic to decrease the track score of unassociated tracks and evaentually delete them once they fall below the defined threshold (or their uncertrainty grows). I have also implemented the update of tracks and increase of their scores
+  
+  <img src="writeup_images/final/RMSE_step2.png" alt="RMSE Step 2"  width="500">
 
 3. **association**: This step involves writing the steps for associating tracks to measurements. This is done by calculating the MMahalanobis distance values between all tracks and all measurements, which takes the covariance of the tracks into account, and storing the distances in the association matrix. Later, the association matrix is used to find the closest track and measurement pair, in order to associate them to each other and removing them from the matrix. Doing this repeatedly determines all the track-measurement pairs, leaving the unassociated tracks and measurements behind. I also implemented the gating function which is used to reduces the association complexity by removing unlikely association pairs.
 
